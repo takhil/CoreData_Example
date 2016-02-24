@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="Details" representedClassName="Details" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pdetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pdetails" syncable="YES"/>
+    </entity>
+    <entity name="Pdetails" representedClassName="Pdetails" parentEntity="Details" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="study" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Details" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Details" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Pdetails" positionX="151" positionY="0" width="128" height="88"/>
+    </elements>
+</model>
